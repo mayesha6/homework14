@@ -1,0 +1,78 @@
+/* global css  */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+    max-width: 1360px;
+    padding: 0px 25px;
+    margin: 0 auto;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.btn-section{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+    transition: 0.3s;
+}
+.btn-wrap a{
+    background-color: #05ab6d;
+    color:#fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size:20px;
+    line-height: 30px;
+    margin: 0px 5px;
+    font-weight:500;
+}
+.nav-section,.nav-section2{
+    background-color: rgb(77, 77, 77, 0.9);
+    height:100vh;
+    width:0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    transition: 0.3s;
+}
+.nav-section2{
+    height:0vh;
+    width:100%;
+}
+#nav-menu, #nav-menu2{
+    visibility: hidden;
+}
+.nav-section nav ul li a, .nav-section2 nav ul li a, .close-btn a, .close-btn2 a{
+    display: block;
+    color:#fff;
+    font-size:25px;
+    line-height: 30px;
+    margin: 5px 0px;
+    font-weight:700;
+    text-transform: capitalize;
+    text-align: center;
+    transition: 0.3s;
+}
+.nav-section nav ul li a:hover, .nav-section2 nav ul li a:hover, .close-btn a:hover, .close-btn2 a:hover{
+    color:#05ab6d;
+}
+.close-btn a, .close-btn2 a{
+    position: absolute;
+    top:10px;
+    right:20px;
+}
+.close-btn2{
+    visibility: hidden;
+}
